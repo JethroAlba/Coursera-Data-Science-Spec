@@ -33,9 +33,9 @@ Time domain signals (prefixed by `timeDomainimeDomain`) are signals captured usi
   - `timeDomainBodyAccelerometer-Mean-Z`
 
 * Standard deviation of time domain body acceleration in X, Y, and Z directions:
-  -`timeDomainBodyAccelerometer-StandardDeviation-X`
-  -`timeDomainBodyAccelerometer-StandardDeviation-Y`
-  -`timeDomainBodyAccelerometer-StandardDeviation-Z`
+  - `timeDomainBodyAccelerometer-StandardDeviation-X`
+  - `timeDomainBodyAccelerometer-StandardDeviation-Y`
+  - `timeDomainBodyAccelerometer-StandardDeviation-Z`
 
 * Average time domain gravity acceleration in X, Y and Z directions:
   - `timeDomainGravityAccelerometer-Mean-X`
@@ -105,34 +105,51 @@ Time domain signals (prefixed by `timeDomainimeDomain`) are signals captured usi
 
 The frequency domain signal was obtained by applying a Fast Fourier Transform (FFT) to some of the time domain signals producing the following variables:
 
+* Average frequency domain body acceleration in X, Y and Z directions:
+- `frequencyDomainBodyAccelerometer-Mean-X`
+- `frequencyDomainBodyAccelerometer-Mean-Y`
+- `frequencyDomainBodyAccelerometer-Mean-Z`
 
-`frequencyDomainBodyAccelerometer-Mean-X`
-`frequencyDomainBodyAccelerometer-Mean-Y`
-`frequencyDomainBodyAccelerometer-Mean-Z`
-`frequencyDomainBodyAccelerometer-StandardDeviation-X`
-`frequencyDomainBodyAccelerometer-StandardDeviation-Y`
-`frequencyDomainBodyAccelerometer-StandardDeviation-Z`
-`frequencyDomainBodyAccelerometerJerk-Mean-X`
-`frequencyDomainBodyAccelerometerJerk-Mean-Y`
-`frequencyDomainBodyAccelerometerJerk-Mean-Z`
-`frequencyDomainBodyAccelerometerJerk-StandardDeviation-X`
-`frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y`
-`frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z`
-`frequencyDomainBodyGyroscope-Mean-X`
-`frequencyDomainBodyGyroscope-Mean-Y`
-`frequencyDomainBodyGyroscope-Mean-Z`
-`frequencyDomainBodyGyroscope-StandardDeviation-X`
-`frequencyDomainBodyGyroscope-StandardDeviation-Y`
-`frequencyDomainBodyGyroscope-StandardDeviation-Z`
-`frequencyDomainBodyAccelerometerMagnitude-Mean`
-`frequencyDomainBodyAccelerometerMagnitude-StandardDeviation`
-`frequencyDomainBodyAccelerometerJerkMagnitude-Mean`
-`frequencyDomainBodyAccelerometerJerkMagnitude-StandardDeviation`
-`frequencyDomainBodyGyroscopeMagnitude-Mean`
-`frequencyDomainBodyGyroscopeMagnitude-StandardDeviation`
-`frequencyDomainBodyGyroscopeJerkMagnitude-Mean`
-`frequencyDomainBodyGyroscopeJerkMagnitude-StandardDeviation`
+* Standard deviation of frequency domain body acceleration in X, Y, and Z directions:
+- `frequencyDomainBodyAccelerometer-StandardDeviation-X`
+- `frequencyDomainBodyAccelerometer-StandardDeviation-Y`
+- `frequencyDomainBodyAccelerometer-StandardDeviation-Z`
 
+* Average frequency domain of body acceleration jerk in X, Y and Z directions:
+- `frequencyDomainBodyAccelerometerJerk-Mean-X`
+- `frequencyDomainBodyAccelerometerJerk-Mean-Y`
+- `frequencyDomainBodyAccelerometerJerk-Mean-Z`
+
+* Standard deviation of frequency domain body acceleration jerk in X, Y, and Z directions:
+- `frequencyDomainBodyAccelerometerJerk-StandardDeviation-X`
+- `frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y`
+- `frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z`
+
+* Average frequency domain of body gyroscope in X, Y and Z directions:
+- `frequencyDomainBodyGyroscope-Mean-X`
+- `frequencyDomainBodyGyroscope-Mean-Y`
+- `frequencyDomainBodyGyroscope-Mean-Z`
+
+* Standard deviation of frequency domain body gyroscope in X, Y, and Z directions:
+- `frequencyDomainBodyGyroscope-StandardDeviation-X`
+- `frequencyDomainBodyGyroscope-StandardDeviation-Y`
+- `frequencyDomainBodyGyroscope-StandardDeviation-Z`
+
+* Average frequency domain of body acceleration magnitude and jerk magnitude
+- `frequencyDomainBodyAccelerometerMagnitude-Mean`
+- `frequencyDomainBodyAccelerometerJerkMagnitude-Mean`
+
+* Standard deviation of frequency domain of body acceleration magnitude and jerk magnitude
+- `frequencyDomainBodyAccelerometerMagnitude-StandardDeviation`
+- `frequencyDomainBodyAccelerometerJerkMagnitude-StandardDeviation`
+
+* Average frequency domain of body gyroscope magnitude and jerk magnitude
+- `frequencyDomainBodyGyroscopeMagnitude-Mean`
+- `frequencyDomainBodyGyroscopeJerkMagnitude-Mean`
+
+* Standard deviation frequency domain of body gyroscope magnitude and jerk magnitude
+- `frequencyDomainBodyGyroscopeMagnitude-StandardDeviation`
+- `frequencyDomainBodyGyroscopeJerkMagnitude-StandardDeviation`
 
 
 For each experiment participant and specific activity, 66 measurements were taken and recorded. 
