@@ -25,78 +25,83 @@ For each category,  Information on the method used to d
 
 ### Time domain signals
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ, where the prefix `t` is used to denote `time`, and `Acc` and `Gyro` is used to refer to `Acceleration` and `Gyroscope`. 
+Time domain signals (prefixed by `timeDomainimeDomain`) are signals captured using an accelerometer and a gyroscope at a constant rate of 50 Hz. Thse were then filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Subsequently, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz. These steps resulted to the following variables:
 
- `timeDomainimeDomainBodyAccelerometerelerometer.Mean.X`                                        
- `timeDomainimeDomainBodyAccelerometerelerometer.Mean.Y`                                        
- `timeDomainimeDomainBodyAccelerometerelerometer.Mean.Z`  
- 
- [6] "timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.X"                           
- [7] "timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.Y"                           
- [8] "timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.Z"                           
- [9] "timeDomainimeDomainGravityAccelerometerelerometer.Mean.X"                                     
-[10] "timeDomainimeDomainGravityAccelerometerelerometer.Mean.Y"                                     
-[11] "timeDomainimeDomainGravityAccelerometerelerometer.Mean.Z"                                     
-[12] "timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.X"                        
-[13] "timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.Y"                        
-[14] "timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.Z"                        
-[15] "timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.X"                                    
-[16] "timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.Y"                                    
-[17] "timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.Z"                                    
-[18] "timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.X"                       
-[19] "timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.Y"                       
-[20] "timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.Z"                       
-[21] "timeDomainimeDomainBodyGyroscopescope.Mean.X"                                                 
-[22] "timeDomainimeDomainBodyGyroscopescope.Mean.Y"                                                 
-[23] "timeDomainimeDomainBodyGyroscopescope.Mean.Z"                                                 
-[24] "timeDomainimeDomainBodyGyroscopescope.StandardDeviation.X"                                    
-[25] "timeDomainimeDomainBodyGyroscopescope.StandardDeviation.Y"                                    
-[26] "timeDomainimeDomainBodyGyroscopescope.StandardDeviation.Z"                                    
-[27] "timeDomainimeDomainBodyGyroscopescopeJerk.Mean.X"                                             
-[28] "timeDomainimeDomainBodyGyroscopescopeJerk.Mean.Y"                                             
-[29] "timeDomainimeDomainBodyGyroscopescopeJerk.Mean.Z"                                             
-[30] "timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.X"                                
-[31] "timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.Y"                                
-[32] "timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.Z"                                
-[33] "timeDomainimeDomainBodyAccelerometerelerometerMagnitudenitude.Mean"                           
-[34] "timeDomainimeDomainBodyAccelerometerelerometerMagnitudenitude.StandardDeviation"              
-[35] "timeDomainimeDomainGravityAccelerometerelerometerMagnitudenitude.Mean"                        
-[36] "timeDomainimeDomainGravityAccelerometerelerometerMagnitudenitude.StandardDeviation"           
-[37] "timeDomainimeDomainBodyAccelerometerelerometerJerkMagnitudenitude.Mean"                       
-[38] "timeDomainimeDomainBodyAccelerometerelerometerJerkMagnitudenitude.StandardDeviation"          
-[39] "timeDomainimeDomainBodyGyroscopescopeMagnitudenitude.Mean"                                    
-[40] "timeDomainimeDomainBodyGyroscopescopeMagnitudenitude.StandardDeviation"                       
-[41] "timeDomainimeDomainBodyGyroscopescopeJerkMagnitudenitude.Mean"                                
-[42] "timeDomainimeDomainBodyGyroscopescopeJerkMagnitudenitude.StandardDeviation"
+* Average time-domain body acceleration in the X, Y and Z directions:
+   `timeDomainimeDomainBodyAccelerometerelerometer.Mean.X`                                        
+   `timeDomainimeDomainBodyAccelerometerelerometer.Mean.Y`                                        
+   `timeDomainimeDomainBodyAccelerometerelerometer.Mean.Z`  
+
+
+`timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.X`
+`timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.Y`
+`timeDomainimeDomainBodyAccelerometerelerometer.StandardDeviation.Z`
+`timeDomainimeDomainGravityAccelerometerelerometer.Mean.X`
+`timeDomainimeDomainGravityAccelerometerelerometer.Mean.Y`
+`timeDomainimeDomainGravityAccelerometerelerometer.Mean.Z`
+`timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.X`
+`timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.Y`
+`timeDomainimeDomainGravityAccelerometerelerometer.StandardDeviation.Z`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.X`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.Y`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.Mean.Z`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.X`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.Y`
+`timeDomainimeDomainBodyAccelerometerelerometerJerk.StandardDeviation.Z`
+`timeDomainimeDomainBodyGyroscopescope.Mean.X`
+`timeDomainimeDomainBodyGyroscopescope.Mean.Y`
+`timeDomainimeDomainBodyGyroscopescope.Mean.Z`
+`timeDomainimeDomainBodyGyroscopescope.StandardDeviation.X`
+`timeDomainimeDomainBodyGyroscopescope.StandardDeviation.Y`
+`timeDomainimeDomainBodyGyroscopescope.StandardDeviation.Z`
+`timeDomainimeDomainBodyGyroscopescopeJerk.Mean.X`
+`timeDomainimeDomainBodyGyroscopescopeJerk.Mean.Y`
+`timeDomainimeDomainBodyGyroscopescopeJerk.Mean.Z`
+`timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.X`
+`timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.Y`
+`timeDomainimeDomainBodyGyroscopescopeJerk.StandardDeviation.Z`
+`timeDomainimeDomainBodyAccelerometerelerometerMagnitudenitude.Mean`
+`timeDomainimeDomainBodyAccelerometerelerometerMagnitudenitude.StandardDeviation`
+`timeDomainimeDomainGravityAccelerometerelerometerMagnitudenitude.Mean`
+`timeDomainimeDomainGravityAccelerometerelerometerMagnitudenitude.StandardDeviation`
+`timeDomainimeDomainBodyAccelerometerelerometerJerkMagnitudenitude.Mean`
+`timeDomainimeDomainBodyAccelerometerelerometerJerkMagnitudenitude.StandardDeviation`
+`timeDomainimeDomainBodyGyroscopescopeMagnitudenitude.Mean`
+`timeDomainimeDomainBodyGyroscopescopeMagnitudenitude.StandardDeviation`
+`timeDomainimeDomainBodyGyroscopescopeJerkMagnitudenitude.Mean`
+`timeDomainimeDomainBodyGyroscopescopeJerkMagnitudenitude.StandardDeviation`
+
 
 ### Frequency domain signal
-[43] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.X"                              
-[44] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.Y"                              
-[45] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.Z"                              
-[46] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.X"                 
-[47] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.Y"                 
-[48] "frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.Z"                 
-[49] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.X"                          
-[50] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.Y"                          
-[51] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.Z"                          
-[52] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.X"             
-[53] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.Y"             
-[54] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.Z"             
-[55] "frequencyDomainrequencyDomainBodyGyroscopescope.Mean.X"                                       
-[56] "frequencyDomainrequencyDomainBodyGyroscopescope.Mean.Y"                                       
-[57] "frequencyDomainrequencyDomainBodyGyroscopescope.Mean.Z"                                       
-[58] "frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.X"                          
-[59] "frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.Y"                          
-[60] "frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.Z"                          
-[61] "frequencyDomainrequencyDomainBodyAccelerometerelerometerMagnitudenitude.Mean"                 
-[62] "frequencyDomainrequencyDomainBodyAccelerometerelerometerMagnitudenitude.StandardDeviation"    
-[63] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerkMagnitudenitude.Mean"             
-[64] "frequencyDomainrequencyDomainBodyAccelerometerelerometerJerkMagnitudenitude.StandardDeviation"
-[65] "frequencyDomainrequencyDomainBodyGyroscopescopeMagnitudenitude.Mean"                          
-[66] "frequencyDomainrequencyDomainBodyGyroscopescopeMagnitudenitude.StandardDeviation"             
-[67] "frequencyDomainrequencyDomainBodyGyroscopescopeJerkMagnitudenitude.Mean"                      
-[68] "frequencyDomainrequencyDomainBodyGyroscopescopeJerkMagnitudenitude.StandardDeviation"     
 
+The frequency domain signal was obtained by applying a Fast Fourier Transform (FFT) to some of the time domain signals producing the following variables:
+
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.X`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.Y`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.Mean.Z`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.X`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.Y`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometer.StandardDeviation.Z`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.X`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.Y`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.Mean.Z`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.X`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.Y`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerk.StandardDeviation.Z`
+`frequencyDomainrequencyDomainBodyGyroscopescope.Mean.X`
+`frequencyDomainrequencyDomainBodyGyroscopescope.Mean.Y`
+`frequencyDomainrequencyDomainBodyGyroscopescope.Mean.Z`
+`frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.X`
+`frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.Y`
+`frequencyDomainrequencyDomainBodyGyroscopescope.StandardDeviation.Z`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerMagnitudenitude.Mean`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerMagnitudenitude.StandardDeviation`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerkMagnitudenitude.Mean`
+`frequencyDomainrequencyDomainBodyAccelerometerelerometerJerkMagnitudenitude.StandardDeviation`
+`frequencyDomainrequencyDomainBodyGyroscopescopeMagnitudenitude.Mean`
+`frequencyDomainrequencyDomainBodyGyroscopescopeMagnitudenitude.StandardDeviation`
+`frequencyDomainrequencyDomainBodyGyroscopescopeJerkMagnitudenitude.Mean`
+`frequencyDomainrequencyDomainBodyGyroscopescopeJerkMagnitudenitude.StandardDeviation`
 
 
 For each experiment participant and specific activity, 66 measurements were taken and recorded. 
