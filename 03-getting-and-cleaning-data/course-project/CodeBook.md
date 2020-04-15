@@ -13,15 +13,20 @@ The data set contains 180 observations spread across 68 variables.
 
 # About the Variables 
 ## Identifiers
-* `id`
-* `activity`
+* `id`, integer, subject identifier with range from 1 to 30.
+* `activity`, name of the activity the subject performed. The activities include:
+  - WALKING
+  - WALKING_UPSTAIRS
+  - WALKING_DOWNSTAIRS
+  - SITTING
+  - STANDING
+  - LAYING
 
 ## Measure variables
 
 Each measure variable are normalized and bounded within -1,1. The measure variables for this data is separated into two categories:`Time domain signals` and `Frequency domain signals`. Each category is composed of data from an accelerometer and a gyrocsope which was used to obtain body, gravity, jerk signals, and their derivatives. This was done for each participant (`id`) and for each of the six activities (`activity`). For the purposes of this project, only the `Mean` and `StandardDeviation` of the signals were taken into consideration in creating the tidy data set. 
 
-
-For each category,  Information on the method used to d
+Each of the 66 measure variables noted here are of `numeric` classes
 
 ### Time domain signals
 
@@ -154,5 +159,5 @@ The frequency domain signal was obtained by applying a Fast Fourier Transform (F
 
 For each experiment participant and specific activity, 66 measurements were taken and recorded. 
 
-
+# About the Transformations
 
